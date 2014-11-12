@@ -12,9 +12,9 @@
         </article>
 
         <article>
-            {{ Form::open(['class'=>'inscription']) }}
+            {{ Form::open(['route'=>'#jaipasencorefaislaroute','class'=>'inscription']) }}
                 <fieldset>
-
+                    <legend>Inscription au site | {{link_to_route('login', 'Ou connectez-vous')}}</legend>
                     
                     {{ Form::label('company', 'Société') }}
                     {{ Form::text('company', '') }}
@@ -24,22 +24,18 @@
                     
                     {{ Form::label('firstname', 'Prénom') }}<span>*</span> 
                     {{ Form::text('firstname', '') }}<br />
-                    
-
 
                     {{ Form::label('address-street', 'Rue') }}<span>*</span> 
                     {{ Form::text('address-street', '') }}
 
                     {{ Form::label('address-number', 'Numéro') }}<span>*</span>
-                    {{ Form::number('address-number', '', ['min'=>1]) }}<br />
+                    {{ Form::text('address-number', '', ['min'=>1]) }}<br />
 
                     {{ Form::label('address-postalCode', 'Code postal') }}<span>*</span> 
-                    {{ Form::number('address-postalCode', '', ['min'=>1]) }}<br />
+                    {{ Form::text('address-postalCode', '', ['min'=>1]) }}<br />
 
                     {{ Form::label('address-town', 'Ville') }}<span>*</span> 
                     {{ Form::text('address-town ', '') }}<br />
-
-
                     
                     {{ Form::label('phone', 'Numéro de Téléphone') }}<span>*</span> 
                     {{ Form::text('phone', '') }}
@@ -50,25 +46,22 @@
                     {{ Form::label('email', 'Email') }}<span>*</span> 
                     {{ Form::email('email', '') }}
                     
+                    {{ Form::label('password', 'Mot de passe') }}<span>*</span> 
+                    {{ Form::password('password', '') }}
+                    
+                    {{ Form::label('password_confirmation', 'Confirmation du mot de passe')}}<span>*</span> 
+                    {{ Form::password('password_confirmation') }}
+                    
+                    {{ Form::label('newsletter', 'S\'inscrire à la Newsletter')}}
+                    {{ Form::checkbox('newsletter', '', ['checked'=>'checked'])}}
+                    
+                    <p><span>*</span>- Champs obligatoires.</p>
+                    
                     <button>Valider l'inscription</button>
                      
                 </fieldset>
             {{ Form::close() }}
             <!--<form action="#" method="post" class="inscription">
-                <fieldset>
-                    <legend>À propos de vous</legend>
-
-                    <label for="company">Société</label> <input id="company" type="text" name="company" placeholder="ASBL RestoRallye" /><br>
-                    <label for="name">Nom</label><span>*</span> <input id="name" type="text" name="name" placeholder="Durant" /><br>
-                    <label for="firstname">Prénom</label><span>*</span> <input id="firstname" type="text" name="firstname" placeholder="Alain" /><br>
-                    <label for="adress">Adresse</label><span>*</span> <input id="adress" type="text" name="adress" placeholder="Rue des gourmands n°12" /><br>
-                    <label for="postalcode">Code postal</label><span>*</span> <input id="postalcode" type="text" name="postalcode" placeholder="1234" /><br>
-                    <label for="city">Ville</label><span>*</span> <input id="city" type="text" name="city" placeholder="Yummyville" /><br>
-                    <label for="phone">Téléphone</label><span>*</span> <input id="phone" type="text" name="phone" placeholder="0471 38 06 38" /><br>
-                    <label for="fax">Fax</label> <input id="fax" type="text" name="fax" /><br>
-                    <label for="email">Email</label><span>*</span> <input id="email" type="text" name="email" placeholder="exemple@restorallye.be" /><br>
-                    <label for="emailConfirm">Confirmez l'email</label><span>*</span> <input id="emailConfirm" type="text" />
-                </fieldset>
 
                 <fieldset>
                     <legend>Inscription</legend>
