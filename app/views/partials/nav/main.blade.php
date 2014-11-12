@@ -8,10 +8,10 @@
                 <li>{{ link_to_route('about', 'À propos') }}</li>
                 <li>
                     @unless(Auth::check())
-                        {{ link_to_route('login', 'Se connecter') }}
+                        {{ link_to_route('login', 'Connexion') }}
                     @endunless
                      @if(Auth::check())
-                         {{ link_to_route('logout', 'Se déconnecter') }}
+                         {{ link_to_route('logout', 'Déconnexion') }}
                     @endif
                  </li>
             </ul>

@@ -222,6 +222,12 @@ fieldset {
   padding: .35em .625em .75em;
 }
 
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
 /* line 1, ../scss/_normalize.min.scss */
 legend {
   border: 0;

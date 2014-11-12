@@ -50,21 +50,20 @@
         <div class="main-article">
             <h2>Voir les soirées précédentes</h2>
             <ul class="galerie-photo">
-                <li class="cadre-photo"><a href="#">Éven. 1</a></li>
-                <li class="cadre-photo"><a href="#">Éven. 1</a></li>
-                <li class="cadre-photo"><a href="#">Éven. 1</a></li>
-                <li class="cadre-photo"><a href="#">Éven. 1</a></li>
-                <li class="cadre-photo"><a href="#">Éven. 1</a></li>
-                <li class="cadre-photo"><a href="#">Éven. 1</a></li>
-                <li class="cadre-photo"><a href="#">Éven. 1</a></li>
-                <li class="cadre-photo"><a href="#">Éven. 1</a></li>
-                <li class="cadre-photo"><a href="#">Éven. 1</a></li>
-                <li class="cadre-photo"><a href="#">Éven. 1</a></li>
-                <li class="cadre-photo"><a href="#">Éven. 1</a></li>
-                <li class="cadre-photo"><a href="#">Éven. 1</a></li>
-                <li class="cadre-photo"><a href="#">Éven. 1</a></li>
-                <li class="cadre-photo"><a href="#">Éven. 1</a></li>
-                <li class="cadre-photo"><a href="#">Éven. 1</a></li>
+                <li class="cadre-photo">{{ link_to_route('event', 'Éven. 1') }}</li>
+                <li class="cadre-photo">{{ link_to_route('event', 'Éven. 1') }}</li>
+                <li class="cadre-photo">{{ link_to_route('event', 'Éven. 1') }}</li>
+                <li class="cadre-photo">{{ link_to_route('event', 'Éven. 1') }}</li>
+                <li class="cadre-photo">{{ link_to_route('event', 'Éven. 1') }}</li>
+                <li class="cadre-photo">{{ link_to_route('event', 'Éven. 1') }}</li>
+                <li class="cadre-photo">{{ link_to_route('event', 'Éven. 1') }}</li>
+                <li class="cadre-photo">{{ link_to_route('event', 'Éven. 1') }}</li>
+                <li class="cadre-photo">{{ link_to_route('event', 'Éven. 1') }}</li>
+                <li class="cadre-photo">{{ link_to_route('event', 'Éven. 1') }}</li>
+                <li class="cadre-photo">{{ link_to_route('event', 'Éven. 1') }}</li>
+                <li class="cadre-photo">{{ link_to_route('event', 'Éven. 1') }}</li>
+                <li class="cadre-photo">{{ link_to_route('event', 'Éven. 1') }}</li>
+                <li class="cadre-photo">{{ link_to_route('event', 'Éven. 1') }}</li>
             </ul>
         </div> <!-- main-article -->
     </div> <!-- #main -->

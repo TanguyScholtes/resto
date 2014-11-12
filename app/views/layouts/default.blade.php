@@ -15,7 +15,7 @@
     <link href='http://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
 
-    <title>{{ $_ENV['SITE_NAME'] }}</title>
+    <title>RestoRallye</title>
     
     <!--[if lt IE 9]>
         <script src="js/vendor/html5-3.6-respond-1.1.0.min.js"></script>
