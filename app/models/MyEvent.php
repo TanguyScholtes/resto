@@ -12,4 +12,7 @@ class MyEvent extends \Eloquent {
     public function registrations(){
 		return $this->hasMany('Registration');
 	}
+    public function images(){
+		return $this->hasMany('Image');
+	}
 }

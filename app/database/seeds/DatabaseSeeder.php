@@ -16,6 +16,7 @@ class DatabaseSeeder extends Seeder {
         $this->call('MyEventTableSeeder');
         $this->call('RegistrationTableSeeder');
         $this->call('CommentTableSeeder');
+        $this->call('ImageTableSeeder');
 	}
 
 }
