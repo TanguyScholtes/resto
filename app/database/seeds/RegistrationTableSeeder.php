@@ -4,7 +4,7 @@ class RegistrationTableSeeder extends Seeder {
 
 	public function run()
 	{
-		DB::table('registrations')->delete();
+		DB::table('restorallye_registrations')->delete();
 
 		Registration::create([
 				'user_ID'	         => User::whereEmail('anonyme@restorallye.com')->first()->id,

@@ -2,7 +2,7 @@
 
 class Comment extends \Eloquent {
     
-    protected $table = 'comments';
+    protected $table = 'restorallye_comments';
     
 	protected $fillable = ['commentary', 'user_ID', 'event_ID'];
     

@@ -4,7 +4,7 @@ class UserTableSeeder extends Seeder {
 
 	public function run()
 	{
-		DB::table('users')->delete();
+		DB::table('restorallye_users')->delete();
 
 		User::create([
 				'name'	             => 'Anonyme',

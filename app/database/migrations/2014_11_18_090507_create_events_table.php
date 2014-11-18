@@ -12,7 +12,7 @@ class CreateEventsTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('events', function(Blueprint $table)
+		Schema::create('restorallye_events', function(Blueprint $table)
 		{
 			$table->increments('id');
             $table->string('location');
@@ -22,6 +22,7 @@ class CreateEventsTable extends Migration {
             $table->integer('resto1_ID');
             $table->integer('resto2_ID');
             $table->integer('resto3_ID');
+            $table->text('description');
             $table->string('done');
 			$table->timestamps();
 		});

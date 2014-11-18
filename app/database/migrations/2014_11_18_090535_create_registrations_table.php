@@ -12,7 +12,7 @@ class CreateRegistrationsTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('registrations', function(Blueprint $table)
+		Schema::create('restorallye_registrations', function(Blueprint $table)
 		{
 			$table->increments('id');
             $table->integer('user_ID');

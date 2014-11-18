@@ -4,7 +4,7 @@ class CommentTableSeeder extends Seeder {
 
 	public function run()
 	{
-		DB::table('comments')->delete();
+		DB::table('restorallye_comments')->delete();
 
 		Comment::create([
 				'commentary'	         => 'Bonjour, je suis Anonyme. We are Anonymous. We are legion. We do not forgive. We do not forget. Expect us.',

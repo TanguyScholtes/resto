@@ -4,7 +4,7 @@ class RestoTableSeeder extends Seeder {
 
 	public function run()
 	{
-		DB::table('restos')->delete();
+		DB::table('restorallye_restos')->delete();
 
 		Resto::create([
 				'name'	             => 'Quick',

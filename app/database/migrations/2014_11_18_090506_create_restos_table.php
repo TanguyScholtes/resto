@@ -12,7 +12,7 @@ class CreateRestosTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('restos', function(Blueprint $table)
+		Schema::create('restorallye_restos', function(Blueprint $table)
 		{
 			$table->increments('id');
             $table->string('name');
